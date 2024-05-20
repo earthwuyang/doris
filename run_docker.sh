@@ -1,0 +1,1 @@
+sudo docker run -it --network=host --name doris_docker -v ~/.m2:/root/.m2  -v /home/ahzgroup/wuy/software/doris-master:/root/doris/ apache/doris:build-env-ldb-toolchain-latest 
