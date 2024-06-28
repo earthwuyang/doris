@@ -1,0 +1,34 @@
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile (default-compile) on project fe-core: Compilation failure: Compilation failure:
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/statistics/AnalysisManager.java:[283,66] incompatible types: org.apache.doris.qe.ShowResultSet cannot be converted to java.sql.ResultSet
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java:[1666,68] incompatible types: java.util.Optional<org.apache.doris.qe.ResultSet> cannot be converted to java.util.Optional<java.sql.ResultSet>
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java:[1845,47] incompatible types: org.apache.doris.qe.CommonResultSet cannot be converted to java.sql.ResultSet
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java:[2468,35] cannot find symbol
+[ERROR]   symbol:   method getColumns()
+[ERROR]   location: variable metaData of type java.sql.ResultSetMetaData
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java:[2565,47] cannot find symbol
+[ERROR]   symbol:   method getResultRows()
+[ERROR]   location: variable resultSet of type java.sql.ResultSet
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java:[2570,46] cannot find symbol
+[ERROR]   symbol:   method getResultRows()
+[ERROR]   location: variable resultSet of type java.sql.ResultSet
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java:[2584,47] cannot find symbol
+[ERROR]   symbol:   method getResultRows()
+[ERROR]   location: variable resultSet of type java.sql.ResultSet
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java:[2586,97] incompatible types: java.sql.ResultSet cannot be converted to org.apache.doris.qe.ResultSet
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java:[2606,23] incompatible types: org.apache.doris.qe.ShowResultSet cannot be converted to java.sql.ResultSet
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java:[2621,31] incompatible types: org.apache.doris.qe.ShowResultSet cannot be converted to java.sql.ResultSet
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java:[2632,26] incompatible types: org.apache.doris.qe.ShowResultSetMetaData cannot be converted to java.sql.ResultSetMetaData
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/StmtExecutor.java:[2651,26] incompatible types: org.apache.doris.qe.ShowResultSetMetaData cannot be converted to java.sql.ResultSetMetaData
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/qe/ConnectProcessor.java:[564,40] incompatible types: org.apache.doris.qe.ShowResultSet cannot be converted to java.sql.ResultSet
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/nereids/trees/plans/commands/ShowProcedureStatusCommand.java:[67,32] incompatible types: org.apache.doris.qe.ShowResultSet cannot be converted to java.sql.ResultSet
+[ERROR] /root/doris/fe/fe-core/src/main/java/org/apache/doris/nereids/trees/plans/commands/ShowCreateProcedureCommand.java:[69,32] incompatible types: org.apache.doris.qe.ShowResultSet cannot be converted to java.sql.ResultSet
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :fe-core

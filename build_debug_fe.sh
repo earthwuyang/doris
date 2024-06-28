@@ -1,0 +1,1 @@
+DISABLE_JAVA_CHECK_STYLE=ON BUILD_TYPE=Debug sh build.sh --fe
