@@ -1,0 +1,1 @@
+DISABLE_JAVA_CHECK_STYLE=ON sh build.sh
